@@ -22,5 +22,6 @@ $this->registerModule(
         //'requires'    => [['core', '2.33']],
         'permissions' => null,
         'type'        => 'plugin',
+        'support'     => 'https://github.com/JcDenis/emptyPlugin/issues',
     ]
 );
