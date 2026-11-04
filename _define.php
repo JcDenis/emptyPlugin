@@ -13,13 +13,17 @@
  */
 declare(strict_types=1);
 
+if (!isset($this) || !is_object($this) || !method_exists($this, 'registerModule') || !isset($this->id) || !is_string($this->id)) {
+    return;
+}
+
 $this->registerModule(
     'Empty plugin',
     'This is an empty plugin',
     'Jean-Christian Denis',
     '1.0',
     [
-        //'requires'    => [['core', '2.33']],
+        //'requires'    => [['core', '2.39']],
         'permissions' => null,
         'type'        => 'plugin',
         'support'     => 'https://github.com/JcDenis/emptyPlugin/issues',
